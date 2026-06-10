@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>N. Shivadathan — Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="wrap-standard">
+        <!-- TOP ROW -->
+        <div class="top-bar-unified-continuous">
+            <div class="bar-logo-area">
+                <span class="logo-text">PORTFOLIO</span>
+                <span class="logo-subtext">N. SHIVADATHAN</span>
+            </div>
+            <div class="banner-embedded">
+                DEVELOPER PERSONNEL RECORD &#149; ACTIVE
+            </div>
+            <div class="controls-embedded">
+                <button onclick="window.open('https://github.com/nshivadathan123-byte', '_blank')">ACCESS
+                    GITHUB</button>
+            </div>
+        </div>
+
+        <!-- BODY ROW -->
+        <div id="gap">
+            <div class="status-bar-unified-continuous">
+                <div class="status-logo-area">
+                    <span class="status-label">STATUS</span>
+                    <span class="status-value" id="system-status">ONLINE</span>
+                </div>
+                <div class="status-banner-embedded">
+                    PROJECT ARCHIVE TELEMETRY &#149; INITIALIZED
+                </div>
+            </div>
+
+            <div class="main-body-content">
+                <!-- SIDEBAR -->
+                <div class="left-frame">
+                    <div class="panel" onclick="scrollToSection('about')">ABOUT ME</div>
+                    <div class="panel" onclick="scrollToSection('skills')">TECH STACK</div>
+                    <div class="panel" onclick="scrollToSection('projects')">PROJECTS</div>
+                    <div class="panel" onclick="scrollToSection('contact')">CONTACT</div>
+                    <div class="spacer"></div>
+                </div>
+
+                <!-- CONTENT AREA -->
+                <div class="content-area">
+                    <div id="about">
+                        <h2 class="section-title">01 &#149; PERSONNEL BRIEFING</h2>
+                        <div class="text-block">
+                            I am a passionate Developer focusing on modern web technologies. With a keen eye
+                            for design and a strong foundation in coding, I bridge the gap between aesthetics and
+                            functionality. My toolkit includes HTML, CSS, and JavaScript to bring ideas to life. I take
+                            pride in building projects that not only work
+                            seamlessly but also look incredible.
+                        </div>
+                    </div>
+
+                    <div id="skills">
+                        <h2 class="section-title">02 &#149; TECHNICAL SPECIFICATIONS</h2>
+                        <div class="skills-grid">
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">JAVASCRIPT</span>
+                            <span class="skill-badge">GIT / VERSION CONTROL</span>
+                        </div>
+                    </div>
+
+                    <div id="projects">
+                        <h2 class="section-title">03 &#149; WEB PROJECTS</h2>
+                        <div class="projects-grid">
+
+                            <!-- Project 1 -->
+                            <div class="project-card">
+                                <h3>ATMOSPHERIC ANALYSIS</h3>
+                                <img src="assets/images/atmospheric.png" alt="Atmospheric Analysis App">
+                                <p>A sleek LCARS-themed dashboard for visualizing weather and atmospheric data. Features
+                                    glowing UI elements and detailed telemetry.</p>
+                                <a href="https://atmospheric-analysis.vercel.app/" target="_blank" class="btn">ENGAGE
+                                    DEMO</a>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="project-card">
+                                <h3>E-COMMERCE LANDING PAGE</h3>
+                                <img src="assets/images/ecommerce.png" alt="E-Commerce Landing Page">
+                                <p>A premium landing page for high-end audio products with vibrant neon lighting, modern
+                                    typography, and smooth micro-animations.</p>
+                                <a href="https://e-commerce-landing-page-lilac.vercel.app/" target="_blank"
+                                    class="btn">ENGAGE DEMO</a>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="project-card">
+                                <h3>DYNAMIC TO-DO LIST</h3>
+                                <img src="assets/images/todo.png" alt="To-Do List App">
+                                <p>A minimalist yet powerful task management application utilizing LCARS databanks and
+                                    responsive interactions.</p>
+                                <a href="https://to-do-list-orpin-chi-51.vercel.app/" target="_blank" class="btn">ENGAGE
+                                    DEMO</a>
+                            </div>
+
+                        </div>
+
+                        <h3 class="section-title"
+                            style="font-size: 1.8rem; border-bottom-width: 1px; margin-top: 40px; color: var(--bluey);">
+                            GITHUB SOURCE REPOSITORIES</h3>
+                        <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+                            <div class="project-card">
+                                <h3>OCR-SCROLL</h3>
+                                <p>In-development Chromium extension utilizing OCR to dynamically adjust auto-scrolling
+                                    speeds based on text density.</p>
+                                <a href="https://github.com/nshivadathan123-byte/OCR-scroll" target="_blank" class="btn"
+                                    style="background: var(--bluey); color: #fff;">VIEW SOURCE</a>
+                            </div>
+
+                            <div class="project-card">
+                                <h3>PORTFOLIO</h3>
+                                <p>The source code for this developer portfolio, featuring a modernized Star Trek LCARS
+                                    interface utilizing pure HTML, CSS, and vanilla JS.</p>
+                                <a href="https://github.com/nshivadathan123-byte/portfolio" target="_blank" class="btn"
+                                    style="background: var(--bluey); color: #fff;">VIEW SOURCE</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="contact">
+                        <h2 class="section-title">04 &#149; CONTACTS </h2>
+                        <div class="text-block">
+                            Open frequencies for new projects, creative ideas or opportunities. Transmit your message
+                            through the following channels.
+                        </div>
+                        <div class="contact-row">
+                            <a href="https://github.com/nshivadathan123-byte" target="_blank">GITHUB</a>
+                            <a href="mailto:nshivadathan123@gmail.com">EMAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
